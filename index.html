@@ -1,581 +1,980 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Thesis Help Pakistan — Academic writing, rewriting, assignments, coursework, research articles, dissertations, synopsis, proposals, thesis, data analysis, formatting, proofreading, AI & plagiarism reports and removal." />
-  <meta name="theme-color" content="#0b1220" />
-  <meta name="theme-color" content="#ffffff" />
-  <title>Thesis Help Pakistan | Academic Help & Research Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0f2a44" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Optional: Google font (still HTML/CSS only) -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Thesis Help Pakistan | Academic Research & Thesis Consultancy</title>
+  <meta name="description" content="Thesis Help Pakistan provides structured academic guidance for BS, MS, and PhD research—thesis consulting, methodology support, editing, formatting, and literature review assistance with a transparent process and confidentiality." />
+
+  <!-- Canonical (replace with your domain when deploying) -->
+  <link rel="canonical" href="https://example.com/" />
+
+  <!-- Preconnect + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Thesis Help Pakistan",
+    "url": "https://example.com/",
+    "logo": "https://example.com/logo.png",
+    "description": "Academic assistance and research consultancy for university students and researchers in Pakistan.",
+    "areaServed": "PK",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "telephone": "+92-000-0000000",
+      "availableLanguage": ["en", "ur"]
+    }]
+  }
+  </script>
+
+  <!-- FAQ Schema (kept in sync with on-page FAQs) -->
+  <script type="application/ld+json" id="faq-schema">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do you write complete theses, or do you provide academic guidance and research support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We primarily provide structured academic guidance and research consultancy. This includes outlining, methodology support, literature review structuring, editing, formatting, and feedback-based revisions aligned with your university requirements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you ensure academic quality and methodological correctness?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Each project follows a documented workflow: requirement analysis, research planning, drafting/editing, and a quality review that checks structure, clarity, referencing, and methodological alignment with the selected research design."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you work with specific university formats (HEC, APA, IEEE, MLA, Chicago)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We format work according to the guidelines you provide (department templates or HEC requirements). We also support common referencing styles including APA, IEEE, MLA, and Chicago."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my information kept confidential?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Confidentiality is maintained by default. We only use your materials to provide the agreed support, and we do not publish or share your documents without explicit permission."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What information do you need to provide an accurate estimate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We typically require the paper type, academic level, page count (or word count), deadline, and any template or rubric. If you have a proposal or supervisor comments, sharing them improves accuracy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide plagiarism checks and originality guidance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We provide originality guidance and can support similarity reduction through rewriting and citation improvements. If you have an institutional similarity report, we can revise accordingly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How are revisions handled?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Revisions are handled through a feedback loop. You share supervisor or self-review notes; we implement changes within the agreed scope and confirm alignment with requirements before final delivery."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you help with data analysis (SPSS, R, Excel) and interpretation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, where appropriate. We can guide dataset preparation, analysis approach selection, result presentation, and interpretation aligned with your research questions and methodology."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are your typical timelines?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Timelines depend on scope and deadline. Short tasks (editing/formatting) may be completed faster, while thesis modules require staged delivery. We share a realistic schedule before starting."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
+
 <body>
-  <!-- Topbar -->
-  <div class="topbar" role="region" aria-label="Top bar">
-    <div class="container topbar__inner">
-      <div class="topbar__left">
-        <span class="badge">Pakistan • Confidential • On-time</span>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- 1) Top academic announcement bar (subtle, professional, dismissible) -->
+  <div class="announcement" role="region" aria-label="Academic announcement" data-announcement>
+    <div class="container announcement__inner">
+      <div class="announcement__text">
+        <span class="announcement__badge" aria-hidden="true">Academic Notice</span>
+        <p>
+          For December intakes and submission weeks, we recommend booking a consultation early to align requirements, templates, and timelines.
+        </p>
       </div>
-      <div class="topbar__right">
-        <a class="toplink" href="#pricing">Price Calculator</a>
-        <span class="dot">•</span>
-        <a class="toplink" href="#contact">Contact</a>
+      <button class="announcement__close" type="button" aria-label="Dismiss announcement" data-announcement-close>
+        <span aria-hidden="true">✕</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- 2) Trust strip -->
+  <div class="trust-strip" role="region" aria-label="Quality and contact">
+    <div class="container trust-strip__inner">
+      <div class="trust-strip__left">
+        <span class="trust-strip__item">
+          <span class="dot dot--gold" aria-hidden="true"></span>
+          Academic quality assurance aligned with university formats
+        </span>
+        <span class="trust-strip__divider" aria-hidden="true"></span>
+        <span class="trust-strip__item">
+          <span class="star" aria-hidden="true">★</span>
+          <strong>4.9/5</strong> based on student feedback
+        </span>
+      </div>
+
+      <div class="trust-strip__right">
+        <a class="btn btn--whatsapp" href="#contact" data-whatsapp>
+          <span class="btn__icon" aria-hidden="true">WhatsApp</span>
+          WhatsApp Consultation
+        </a>
       </div>
     </div>
   </div>
 
-  <!-- Header -->
-
-  <header class="header" id="home">
+  <!-- 3) Sticky header -->
+  <header class="site-header" data-header>
     <div class="container header__inner">
-      <a class="brand" href="#home" aria-label="Thesis Help Pakistan home">
-        <div class="brand__mark" aria-hidden="true">TH</div>
-        <div class="brand__text">
-          <div class="brand__name">Thesis Help Pakistan</div>
-          <div class="brand__tag">Academic Help • Research Support</div>
-        </div>
-      </a>
+      <div class="brand">
+        <a class="brand__link" href="#home" aria-label="Thesis Help Pakistan - Home">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__name">Thesis Help Pakistan</span>
+        </a>
+      </div>
 
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="nav-toggle__bar"></span>
-        <span class="nav-toggle__bar"></span>
-        <span class="nav-toggle__bar"></span>
-      </button>
+      <nav class="nav" aria-label="Primary navigation" data-nav>
+        <button class="nav__toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+          <span class="nav__toggle-lines" aria-hidden="true"></span>
+        </button>
 
-      <nav class="nav" id="navMenu" aria-label="Primary navigation">
-        <a href="#services">Services</a>
-        <a href="#samples">Sample Work</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#contact" class="btn btn--small">Get a Quote</a>
+        <ul class="nav__list" data-nav-list>
+          <li><a class="nav__link" href="#home">Home</a></li>
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#services">Services</a></li>
+          <li><a class="nav__link" href="#samples">Samples</a></li>
+          <li><a class="nav__link" href="#reviews">Reviews</a></li>
+          <li><a class="nav__link" href="#blog">Blog</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
       </nav>
+
+      <div class="header__cta">
+        <a class="btn btn--primary" href="#contact">Order Now</a>
+      </div>
     </div>
   </header>
 
-  <!-- Hero -->
-  <main>
-    <section class="hero" aria-label="Hero">
+  <main id="main">
+    <!-- 4) Hero section (two-column) -->
+    <section id="home" class="hero" aria-label="Academic consultancy introduction">
       <div class="container hero__grid">
+        <!-- Left -->
         <div class="hero__content">
-          <h1>Premium Academic Help for <span class="grad">Thesis, Research & Coursework</span></h1>
+          <p class="eyebrow">Academic Research & Thesis Consultancy</p>
+          <h1>Structured thesis guidance for BS, MS, and PhD research in Pakistan.</h1>
           <p class="lead">
-            Professional support in writing, rewriting, assignments, dissertations, synopsis, proposals, thesis,
-            data analysis, formatting, proofreading, and AI/plagiarism services — delivered with strict confidentiality.
+            We support students and researchers with methodology planning, literature review structuring,
+            formatting, editing, and supervised revisions—using a documented process designed for academic standards.
           </p>
 
-          <div class="hero__cta">
-            <a class="btn" href="#pricing">Calculate Price</a>
-            <a class="btn btn--ghost" href="#services">Explore Services</a>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#services">Hire Expert Academic Writers</a>
+            <a class="btn btn--outline" href="#contact" data-whatsapp>WhatsApp Consultation</a>
           </div>
 
-          <div class="trust-row" aria-label="Trust indicators">
-            <div class="trust">
-              <div class="trust__num" id="statOrders">1,200+</div>
-              <div class="trust__label">Projects Assisted</div>
+          <div class="hero__notes" role="list" aria-label="Assurance notes">
+            <div class="note" role="listitem">
+              <span class="note__title">Confidential by default</span>
+              <span class="note__desc">Your materials remain private and used only for agreed support.</span>
             </div>
-            <div class="trust">
-              <div class="trust__num" id="statRating">4.8/5</div>
-              <div class="trust__label">Client Satisfaction</div>
+            <div class="note" role="listitem">
+              <span class="note__title">Format-aligned delivery</span>
+              <span class="note__desc">HEC, department templates, and major citation styles supported.</span>
             </div>
-            <div class="trust">
-              <div class="trust__num">24/7</div>
-              <div class="trust__label">Support</div>
-            </div>
-          </div>
-
-          <div class="note">
-            <strong>Important:</strong> We provide academic assistance and editing services. Final submission is always your responsibility.
           </div>
         </div>
 
-        <div class="hero__card" role="region" aria-label="Quick quote">
-          <div class="card">
-            <div class="card__top">
-              <h2>Quick Quote</h2>
-              <p class="muted">Get an instant estimate and send it to WhatsApp.</p>
+        <!-- Right: Price estimate calculator card -->
+        <aside class="hero__card" aria-label="Price estimate calculator">
+          <article class="calc card">
+            <div class="card__header">
+              <h2 class="card__title">Price Estimate</h2>
+              <p class="card__subtitle">A quick, transparent estimate (PKR). Final pricing depends on requirements and template.</p>
             </div>
 
-            <form class="mini-form" id="miniQuoteForm">
-              <label>
-                Service
-                <select id="miniService">
-                  <option value="writing">Writing</option>
-                  <option value="rewriting">Rewriting</option>
-                  <option value="assignment">Assignments / Coursework</option>
-                  <option value="research">Research Article</option>
-                  <option value="thesis">Thesis / Dissertation</option>
-                  <option value="analysis">Data Set & Data Analysis</option>
-                  <option value="formatting">Formatting / Proofreading</option>
-                  <option value="plag">AI + Plag Report</option>
-                  <option value="removal">AI + Plag Removal</option>
-                </select>
-              </label>
-
-              <div class="grid2">
-                <label>
-                  Pages
-                  <input id="miniPages" type="number" min="1" value="10" />
-                </label>
-                <label>
-                  Deadline
-                  <select id="miniDeadline">
-                    <option value="standard">Standard</option>
-                    <option value="urgent">Urgent</option>
-                    <option value="express">Express</option>
-                  </select>
-                </label>
-              </div>
-
-              <div class="mini-total">
-                <div>
-                  <div class="muted tiny">Estimated Total</div>
-                  <div class="price" id="miniTotal">PKR 0</div>
-                </div>
-                <button class="btn btn--small" type="button" id="miniWhatsApp">WhatsApp Quote</button>
-              </div>
-
-              <div class="tiny muted">Transparent estimation. Final quote may vary by topic complexity and requirements.</div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Logos / Proof -->
-    <section class="proof" aria-label="Proof strip">
-      <div class="container proof__inner">
-        <div class="proof__item">
-          <span class="proof__icon" aria-hidden="true">✔</span>
-          Confidential Handling
-        </div>
-        <div class="proof__item">
-          <span class="proof__icon" aria-hidden="true">✔</span>
-          Turnitin-Style Reports (upon request)
-        </div>
-        <div class="proof__item">
-          <span class="proof__icon" aria-hidden="true">✔</span>
-          Expert Formatting (APA/MLA/Chicago)
-        </div>
-        <div class="proof__item">
-          <span class="proof__icon" aria-hidden="true">✔</span>
-          Charts, Figures & Diagrams
-        </div>
-      </div>
-    </section>
-
-    <!-- Services -->
-    <section class="section" id="services" aria-label="Services">
-      <div class="container">
-        <div class="section__head">
-          <h2>All Services</h2>
-          <p class="muted">End-to-end academic support across writing, research, analysis, visuals, formatting, and integrity checks.</p>
-        </div>
-
-        <div class="cards">
-          <article class="service-card">
-            <h3>Writing & Rewriting</h3>
-            <p>Academic writing, rewriting, paraphrasing, and improving clarity while preserving meaning and structure.</p>
-            <ul class="ticks">
-              <li>Thesis / Dissertation writing support</li>
-              <li>Rewriting & language enhancement</li>
-              <li>Abstracts, introductions, literature review</li>
-            </ul>
-          </article>
-
-          <article class="service-card">
-            <h3>Assignments & Coursework</h3>
-            <p>Well-structured coursework support aligned with rubrics, learning outcomes, and submission guidelines.</p>
-            <ul class="ticks">
-              <li>Essays & case studies</li>
-              <li>Quizzes, reports, presentations (content)</li>
-              <li>Referencing & citations</li>
-            </ul>
-          </article>
-
-          <article class="service-card">
-            <h3>Research Articles</h3>
-            <p>Support for paper structure, methodology, results writing, and improving publish-readiness.</p>
-            <ul class="ticks">
-              <li>Journal formatting alignment</li>
-              <li>Proofreading & technical editing</li>
-              <li>Figures/tables and captions</li>
-            </ul>
-          </article>
-
-          <article class="service-card">
-            <h3>Synopsis, Proposals & Plans</h3>
-            <p>Strong research direction, problem statement, objectives, and methodology designed for approval.</p>
-            <ul class="ticks">
-              <li>Synopsis and proposal drafting</li>
-              <li>Research questions & framework</li>
-              <li>Gantt / timelines (optional)</li>
-            </ul>
-          </article>
-
-          <article class="service-card">
-            <h3>Data Set & Data Analysis</h3>
-            <p>Help with data preparation and analysis workflows (SPSS/Excel/R/Python guidance possible).</p>
-            <ul class="ticks">
-              <li>Cleaning, coding & descriptive stats</li>
-              <li>Regression/ANOVA/Correlation (as relevant)</li>
-              <li>Interpretation & reporting support</li>
-            </ul>
-          </article>
-
-          <article class="service-card">
-            <h3>Charts, Figures & Diagrams</h3>
-            <p>Professional visuals and academic-ready diagrams that improve readability and impact.</p>
-            <ul class="ticks">
-              <li>Charts & tables redesign</li>
-              <li>Conceptual / theoretical frameworks</li>
-              <li>Flowcharts, models, infographics</li>
-            </ul>
-          </article>
-
-          <article class="service-card">
-            <h3>Formatting & Proofreading</h3>
-            <p>Polished formatting and quality checks aligned to university guidelines and style requirements.</p>
-            <ul class="ticks">
-              <li>APA / MLA / Chicago</li>
-              <li>References & citations check</li>
-              <li>Consistency: headings, numbering, TOC</li>
-            </ul>
-          </article>
-
-          <article class="service-card">
-            <h3>AI + Plag Reports</h3>
-            <p>Integrity checking support with summary insights and recommended improvements.</p>
-            <ul class="ticks">
-              <li>Similarity review guidance</li>
-              <li>AI-detection review guidance</li>
-              <li>Revision plan to reduce risk</li>
-            </ul>
-          </article>
-
-          <article class="service-card">
-            <h3>AI + Plag Removal</h3>
-            <p>Careful rewriting and enhancement to improve originality while keeping academic meaning intact.</p>
-            <ul class="ticks">
-              <li>Human-style rewriting</li>
-              <li>Improved academic tone</li>
-              <li>References preserved (where applicable)</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Samples -->
-    <section class="section section--alt" id="samples" aria-label="Sample work">
-      <div class="container">
-        <div class="section__head">
-          <h2>Sample Work</h2>
-          <p class="muted">A few example deliverables. Replace these with your real samples (sanitized and anonymized).</p>
-        </div>
-
-        <div class="samples">
-          <button class="sample" data-sample="sample1">
-            <div class="sample__top">
-              <span class="pill">Thesis Chapter</span>
-              <span class="pill pill--ghost">APA</span>
-            </div>
-            <h3>Literature Review (Excerpt)</h3>
-            <p class="muted">Structured synthesis with themes, citations, and academic tone.</p>
-            <span class="linkish">Preview →</span>
-          </button>
-
-          <button class="sample" data-sample="sample2">
-            <div class="sample__top">
-              <span class="pill">Data Analysis</span>
-              <span class="pill pill--ghost">SPSS/Excel</span>
-            </div>
-            <h3>Results + Interpretation</h3>
-            <p class="muted">Descriptives, reliability, correlation, and interpretation write-up.</p>
-            <span class="linkish">Preview →</span>
-          </button>
-
-          <button class="sample" data-sample="sample3">
-            <div class="sample__top">
-              <span class="pill">Research Article</span>
-              <span class="pill pill--ghost">Journal</span>
-            </div>
-            <h3>Methodology Section</h3>
-            <p class="muted">Clear methods, sampling, instruments, and ethical considerations.</p>
-            <span class="linkish">Preview →</span>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Reviews -->
-    <section class="section" id="reviews" aria-label="Reviews">
-      <div class="container">
-        <div class="section__head">
-          <h2>Client Reviews</h2>
-          <p class="muted">Social proof builds trust. Add screenshots (with permission) or verified review sources.</p>
-        </div>
-
-        <div class="reviews">
-          <div class="review-card" id="reviewCard" aria-live="polite">
-            <!-- JS will inject -->
-          </div>
-
-          <div class="review-controls">
-            <button class="btn btn--ghost btn--small" id="reviewPrev" type="button">← Previous</button>
-            <button class="btn btn--ghost btn--small" id="reviewNext" type="button">Next →</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pricing Calculator -->
-    <section class="section section--alt" id="pricing" aria-label="Pricing calculator">
-      <div class="container">
-        <div class="section__head">
-          <h2>Price Calculator</h2>
-          <p class="muted">Instant estimate in PKR. Adjust service, academic level, urgency, and add-ons.</p>
-        </div>
-
-        <div class="calc">
-          <div class="calc__panel">
-            <form id="calcForm" class="calc__form" autocomplete="off">
+            <form class="calc__form" data-calc-form>
               <div class="field">
-                <label for="service">Service</label>
-                <select id="service" name="service">
-                  <option value="writing">Writing</option>
-                  <option value="rewriting">Rewriting</option>
-                  <option value="assignment">Assignments / Coursework</option>
-                  <option value="research">Research Article</option>
-                  <option value="thesis">Thesis / Dissertation</option>
-                  <option value="analysis">Data Set & Data Analysis</option>
-                  <option value="formatting">Formatting / Proofreading</option>
-                  <option value="plag">AI + Plag Report</option>
-                  <option value="removal">AI + Plag Removal</option>
+                <label for="paperType">Paper Type</label>
+                <select id="paperType" name="paperType" required>
+                  <option value="proposal">Research Proposal</option>
+                  <option value="thesis">Thesis / Dissertation Chapter</option>
+                  <option value="litreview">Literature Review</option>
+                  <option value="methodology">Methodology & Research Design</option>
+                  <option value="editing">Editing & Proofreading</option>
+                  <option value="formatting">Formatting & Referencing</option>
                 </select>
               </div>
 
-              <div class="field grid2">
+              <div class="field">
+                <label for="level">Academic Level</label>
+                <select id="level" name="level" required>
+                  <option value="bs">BS / Undergraduate</option>
+                  <option value="ms" selected>MS / MPhil</option>
+                  <option value="phd">PhD</option>
+                </select>
+              </div>
+
+              <div class="field field--inline">
                 <div>
-                  <label for="level">Academic Level</label>
-                  <select id="level" name="level">
-                    <option value="ug">Undergraduate</option>
-                    <option value="ms">Masters</option>
-                    <option value="phd">PhD</option>
-                  </select>
+                  <label for="pages">Pages</label>
+                  <input id="pages" name="pages" type="number" min="1" step="1" value="10" inputmode="numeric" required />
                 </div>
                 <div>
                   <label for="deadline">Deadline</label>
-                  <select id="deadline" name="deadline">
-                    <option value="standard">Standard</option>
-                    <option value="urgent">Urgent</option>
-                    <option value="express">Express</option>
+                  <select id="deadline" name="deadline" required>
+                    <option value="30">30+ days</option>
+                    <option value="14" selected>14 days</option>
+                    <option value="7">7 days</option>
+                    <option value="3">72 hours</option>
                   </select>
                 </div>
               </div>
 
-              <div class="field grid2">
-                <div>
-                  <label for="pages">Pages</label>
-                  <input id="pages" name="pages" type="number" min="1" value="10" />
-                  <div class="hint">1 page ≈ 250–300 words (typical academic formatting)</div>
+              <div class="calc__result" aria-live="polite">
+                <div class="calc__price">
+                  <span class="calc__label">Estimated Total</span>
+                  <span class="calc__value" data-calc-price>PKR 0</span>
                 </div>
-                <div>
-                  <label for="complexity">Complexity</label>
-                  <select id="complexity" name="complexity">
-                    <option value="normal">Normal</option>
-                    <option value="technical">Technical</option>
-                    <option value="highlyTechnical">Highly Technical</option>
-                  </select>
-                </div>
-              </div>
-
-              <fieldset class="field">
-                <legend>Add-ons</legend>
-                <div class="checks">
-                  <label class="check"><input type="checkbox" id="addonFormatting" /> Formatting (APA/MLA/Chicago)</label>
-                  <label class="check"><input type="checkbox" id="addonProof" /> Proofreading</label>
-                  <label class="check"><input type="checkbox" id="addonCharts" /> Charts / Figures / Diagrams</label>
-                  <label class="check"><input type="checkbox" id="addonReport" /> AI + Plag Report</label>
-                </div>
-              </fieldset>
-
-              <div class="field">
-                <label for="notes">Notes (optional)</label>
-                <textarea id="notes" rows="4" placeholder="Topic, university guidelines, required style, any specific instructions..."></textarea>
+                <p class="calc__fine">
+                  Includes academic review and one revision cycle within scope. For strict departmental rubrics, pricing may vary.
+                </p>
               </div>
 
               <div class="calc__actions">
-                <button class="btn" type="button" id="calcWhatsApp">Send to WhatsApp</button>
-                <button class="btn btn--ghost" type="reset">Reset</button>
+                <a class="btn btn--primary btn--full" href="#contact">Request a Formal Quote</a>
+                <a class="btn btn--whatsapp btn--full" href="#contact" data-whatsapp>WhatsApp Consultation</a>
+              </div>
+
+              <div class="calc__meta">
+                <div class="meta-badge">
+                  <span class="meta-badge__label">Quality Check</span>
+                  <span class="meta-badge__value">Structure • Citations • Clarity</span>
+                </div>
               </div>
             </form>
+          </article>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 5) Authority section -->
+    <section id="about" class="section authority" aria-label="Academic authority and standards">
+      <div class="container">
+        <header class="section__header">
+          <h2>Institutional standards, transparent workflow, and disciplined academic writing.</h2>
+          <p class="section__lead">
+            Thesis Help Pakistan operates as a research consultancy: we begin with requirements analysis,
+            align with your template and supervisor expectations, then deliver in stages with documented review.
+          </p>
+        </header>
+
+        <div class="authority__grid">
+          <article class="card authority__card">
+            <h3>Research-first approach</h3>
+            <p>
+              We prioritize research alignment before drafting: scope, problem statement, variables, research design,
+              and sources are structured to match academic norms and departmental expectations.
+            </p>
+          </article>
+
+          <article class="card authority__card">
+            <h3>Methodology & referencing discipline</h3>
+            <p>
+              Work is prepared with clear academic logic and consistent citations. We support APA, IEEE, MLA, Chicago,
+              and HEC/department templates—without altering the scholarly tone of your research.
+            </p>
+          </article>
+
+          <article class="card authority__card">
+            <h3>Review and revision controls</h3>
+            <p>
+              Deliverables pass a quality review for structure, clarity, formatting, and coherence. Revisions are handled through
+              a feedback loop using supervisor comments or your review notes.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6) Services section -->
+    <section id="services" class="section services" aria-label="Academic services">
+      <div class="container">
+        <header class="section__header">
+          <h2>Academic services designed for university-level research</h2>
+          <p class="section__lead">
+            Support is modular. You can request a single component (e.g., editing) or staged guidance for a full thesis plan.
+          </p>
+        </header>
+
+        <div class="cards-grid">
+          <article class="card service">
+            <div class="service__icon" aria-hidden="true">
+              <!-- minimal inline SVG -->
+              <svg viewBox="0 0 24 24" role="img" focusable="false">
+                <path d="M6 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm1 5h8M7 12h10M7 16h10" />
+              </svg>
+            </div>
+            <h3>Thesis & dissertation guidance</h3>
+            <p>Chapter planning, structure, academic tone, and supervisor-aligned revisions.</p>
+          </article>
+
+          <article class="card service">
+            <div class="service__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false">
+                <path d="M4 19V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14M7 7h10M7 11h10M7 15h6" />
+              </svg>
+            </div>
+            <h3>Research proposal support</h3>
+            <p>Problem statement refinement, objectives, significance, and feasible timelines.</p>
+          </article>
+
+          <article class="card service">
+            <div class="service__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false">
+                <path d="M5 20l3-1 11-11-2-2L6 17l-1 3zM14 6l2 2" />
+              </svg>
+            </div>
+            <h3>Editing & proofreading</h3>
+            <p>Clarity, grammar, scholarly tone, and consistency across headings and terminology.</p>
+          </article>
+
+          <article class="card service">
+            <div class="service__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false">
+                <path d="M8 6h13M8 12h13M8 18h13M3 6h1M3 12h1M3 18h1" />
+              </svg>
+            </div>
+            <h3>Formatting & referencing</h3>
+            <p>HEC/department templates, tables/figures, and citation style alignment.</p>
+          </article>
+
+          <article class="card service">
+            <div class="service__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false">
+                <path d="M4 4h16v16H4zM7 15l2-2 3 3 5-6 2 2" />
+              </svg>
+            </div>
+            <h3>Literature review structuring</h3>
+            <p>Theme-based synthesis, credible sourcing, and gap identification with academic flow.</p>
+          </article>
+
+          <article class="card service">
+            <div class="service__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false">
+                <path d="M6 8h12M6 12h8M6 16h10M4 20h16" />
+              </svg>
+            </div>
+            <h3>Plagiarism reduction guidance</h3>
+            <p>Rewriting support, citation strengthening, and similarity-aware improvements.</p>
+          </article>
+
+          <article class="card service">
+            <div class="service__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false">
+                <path d="M4 18V6M4 18h16M8 14l3-3 3 2 4-5" />
+              </svg>
+            </div>
+            <h3>Data analysis support</h3>
+            <p>Assistance with analysis planning, result presentation, and interpretation.</p>
+          </article>
+
+          <article class="card service">
+            <div class="service__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false">
+                <path d="M12 3v18M3 12h18M7 7h10v10H7z" />
+              </svg>
+            </div>
+            <h3>Supervisor feedback revisions</h3>
+            <p>Controlled revision cycles mapped to comments and rubric requirements.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7) Samples section -->
+    <section id="samples" class="section samples" aria-label="Academic samples">
+      <div class="container">
+        <header class="section__header">
+          <h2>Representative academic samples (sanitized)</h2>
+          <p class="section__lead">
+            Samples are provided as structured examples only. Sensitive identifiers are removed to preserve confidentiality.
+          </p>
+        </header>
+
+        <div class="cards-grid">
+          <article class="card sample">
+            <div class="sample__top">
+              <h3>Impact of Microfinance on SME Growth</h3>
+              <span class="badge badge--gold">Business</span>
+            </div>
+            <dl class="sample__meta">
+              <div><dt>Level</dt><dd>MS</dd></div>
+              <div><dt>Pages</dt><dd>18</dd></div>
+              <div><dt>Format</dt><dd>APA</dd></div>
+            </dl>
+            <div class="sample__actions">
+              <a class="btn btn--outline" href="#contact">View Sample</a>
+              <a class="btn btn--primary" href="#contact">Order Similar</a>
+            </div>
+          </article>
+
+          <article class="card sample">
+            <div class="sample__top">
+              <h3>Machine Learning for Disease Prediction</h3>
+              <span class="badge badge--gold">Computer Science</span>
+            </div>
+            <dl class="sample__meta">
+              <div><dt>Level</dt><dd>BS</dd></div>
+              <div><dt>Pages</dt><dd>12</dd></div>
+              <div><dt>Format</dt><dd>IEEE</dd></div>
+            </dl>
+            <div class="sample__actions">
+              <a class="btn btn--outline" href="#contact">View Sample</a>
+              <a class="btn btn--primary" href="#contact">Order Similar</a>
+            </div>
+          </article>
+
+          <article class="card sample">
+            <div class="sample__top">
+              <h3>Teacher Training and Student Outcomes</h3>
+              <span class="badge badge--gold">Education</span>
+            </div>
+            <dl class="sample__meta">
+              <div><dt>Level</dt><dd>MPhil</dd></div>
+              <div><dt>Pages</dt><dd>20</dd></div>
+              <div><dt>Format</dt><dd>Chicago</dd></div>
+            </dl>
+            <div class="sample__actions">
+              <a class="btn btn--outline" href="#contact">View Sample</a>
+              <a class="btn btn--primary" href="#contact">Order Similar</a>
+            </div>
+          </article>
+
+          <article class="card sample">
+            <div class="sample__top">
+              <h3>Corporate Governance & Financial Performance</h3>
+              <span class="badge badge--gold">Finance</span>
+            </div>
+            <dl class="sample__meta">
+              <div><dt>Level</dt><dd>PhD</dd></div>
+              <div><dt>Pages</dt><dd>25</dd></div>
+              <div><dt>Format</dt><dd>APA</dd></div>
+            </dl>
+            <div class="sample__actions">
+              <a class="btn btn--outline" href="#contact">View Sample</a>
+              <a class="btn btn--primary" href="#contact">Order Similar</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8) Process section -->
+    <section class="section process" aria-label="Academic workflow">
+      <div class="container">
+        <header class="section__header">
+          <h2>A controlled, four-step academic workflow</h2>
+          <p class="section__lead">Designed to reduce last-minute uncertainty and align deliverables with academic expectations.</p>
+        </header>
+
+        <ol class="process__list">
+          <li class="process__step card">
+            <div class="process__num" aria-hidden="true">01</div>
+            <h3>Consultation</h3>
+            <p>We review requirements, template/rubric, and deadline. Scope and milestones are confirmed.</p>
+          </li>
+          <li class="process__step card">
+            <div class="process__num" aria-hidden="true">02</div>
+            <h3>Assignment</h3>
+            <p>Work begins with research planning and structured drafting or targeted editing support.</p>
+          </li>
+          <li class="process__step card">
+            <div class="process__num" aria-hidden="true">03</div>
+            <h3>Review</h3>
+            <p>Quality checks for structure, coherence, referencing, and format alignment.</p>
+          </li>
+          <li class="process__step card">
+            <div class="process__num" aria-hidden="true">04</div>
+            <h3>Delivery</h3>
+            <p>Final deliverables shared with revision notes and next-step guidance when requested.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 9) Reviews section (slider) -->
+    <section id="reviews" class="section reviews" aria-label="Student reviews">
+      <div class="container">
+        <header class="section__header section__header--split">
+          <div>
+            <h2>Student feedback in an academic tone</h2>
+            <p class="section__lead">Testimonials emphasize clarity, structure, and process rather than marketing claims.</p>
+          </div>
+          <div class="reviews__controls" aria-label="Review controls">
+            <button class="btn btn--outline btn--icon" type="button" data-review-prev aria-label="Previous review">‹</button>
+            <button class="btn btn--outline btn--icon" type="button" data-review-next aria-label="Next review">›</button>
+          </div>
+        </header>
+
+        <div class="reviews__slider" data-review-slider>
+          <div class="reviews__track" data-review-track>
+            <article class="card review" role="group" aria-label="Review 1 of 4">
+              <p class="review__text">
+                “My supervisor asked for a clearer methodology and better alignment between objectives and analysis.
+                The guidance helped me restructure the chapter, and the final document matched the departmental template.”
+              </p>
+              <div class="review__meta">
+                <div class="review__who">
+                  <strong>MS Student</strong>
+                  <span>Public University, Punjab</span>
+                </div>
+                <div class="review__rating" aria-label="Rating 5 out of 5">
+                  <span aria-hidden="true">★★★★★</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="card review" role="group" aria-label="Review 2 of 4">
+              <p class="review__text">
+                “I needed editing and referencing corrections across multiple chapters. The work was careful and consistent,
+                and the revision notes were useful for my final defense preparation.”
+              </p>
+              <div class="review__meta">
+                <div class="review__who">
+                  <strong>PhD Researcher</strong>
+                  <span>Islamabad</span>
+                </div>
+                <div class="review__rating" aria-label="Rating 5 out of 5">
+                  <span aria-hidden="true">★★★★★</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="card review" role="group" aria-label="Review 3 of 4">
+              <p class="review__text">
+                “The literature review was reorganized into themes and gaps. It read like an academic chapter instead of a
+                list of summaries. Formatting also matched our department guidelines.”
+              </p>
+              <div class="review__meta">
+                <div class="review__who">
+                  <strong>MPhil Student</strong>
+                  <span>Karachi</span>
+                </div>
+                <div class="review__rating" aria-label="Rating 5 out of 5">
+                  <span aria-hidden="true">★★★★★</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="card review" role="group" aria-label="Review 4 of 4">
+              <p class="review__text">
+                “The proposal was improved without exaggeration—objectives, significance, and feasibility became clearer.
+                The consultant asked for the rubric first and kept everything aligned with it.”
+              </p>
+              <div class="review__meta">
+                <div class="review__who">
+                  <strong>BS Final Year</strong>
+                  <span>Khyber Pakhtunkhwa</span>
+                </div>
+                <div class="review__rating" aria-label="Rating 5 out of 5">
+                  <span aria-hidden="true">★★★★★</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <p class="reviews__disclaimer">
+          Note: Testimonials are representative and edited only to remove personal identifiers.
+        </p>
+      </div>
+    </section>
+
+    <!-- 10) FAQ section (accordion) -->
+    <section class="section faq" aria-label="Frequently asked questions">
+      <div class="container">
+        <header class="section__header">
+          <h2>Frequently asked academic questions</h2>
+          <p class="section__lead">Clear answers for students under deadline pressure—without overpromising.</p>
+        </header>
+
+        <div class="faq__list" data-accordion>
+          <article class="faq__item card">
+            <h3>
+              <button class="faq__q" type="button" aria-expanded="false">
+                Do you write complete theses, or do you provide academic guidance and research support?
+                <span class="faq__chev" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq__a" hidden>
+              <p>
+                We primarily provide structured academic guidance and research consultancy. This includes outlining, methodology support,
+                literature review structuring, editing, formatting, and feedback-based revisions aligned with your university requirements.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq__item card">
+            <h3>
+              <button class="faq__q" type="button" aria-expanded="false">
+                How do you ensure academic quality and methodological correctness?
+                <span class="faq__chev" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq__a" hidden>
+              <p>
+                Each project follows a documented workflow: requirement analysis, research planning, drafting/editing,
+                and a quality review that checks structure, clarity, referencing, and methodological alignment with the selected research design.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq__item card">
+            <h3>
+              <button class="faq__q" type="button" aria-expanded="false">
+                Can you work with specific university formats (HEC, APA, IEEE, MLA, Chicago)?
+                <span class="faq__chev" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq__a" hidden>
+              <p>
+                Yes. We format work according to the guidelines you provide (department templates or HEC requirements).
+                We also support common referencing styles including APA, IEEE, MLA, and Chicago.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq__item card">
+            <h3>
+              <button class="faq__q" type="button" aria-expanded="false">
+                Is my information kept confidential?
+                <span class="faq__chev" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq__a" hidden>
+              <p>
+                Confidentiality is maintained by default. We only use your materials to provide the agreed support, and we do not publish
+                or share your documents without explicit permission.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq__item card">
+            <h3>
+              <button class="faq__q" type="button" aria-expanded="false">
+                What information do you need to provide an accurate estimate?
+                <span class="faq__chev" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq__a" hidden>
+              <p>
+                We typically require the paper type, academic level, page count (or word count), deadline, and any template or rubric.
+                If you have a proposal or supervisor comments, sharing them improves accuracy.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq__item card">
+            <h3>
+              <button class="faq__q" type="button" aria-expanded="false">
+                Do you provide plagiarism checks and originality guidance?
+                <span class="faq__chev" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq__a" hidden>
+              <p>
+                We provide originality guidance and can support similarity reduction through rewriting and citation improvements.
+                If you have an institutional similarity report, we can revise accordingly.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq__item card">
+            <h3>
+              <button class="faq__q" type="button" aria-expanded="false">
+                How are revisions handled?
+                <span class="faq__chev" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq__a" hidden>
+              <p>
+                Revisions are handled through a feedback loop. You share supervisor or self-review notes; we implement changes within the
+                agreed scope and confirm alignment with requirements before final delivery.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq__item card">
+            <h3>
+              <button class="faq__q" type="button" aria-expanded="false">
+                Can you help with data analysis (SPSS, R, Excel) and interpretation?
+                <span class="faq__chev" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq__a" hidden>
+              <p>
+                Yes, where appropriate. We can guide dataset preparation, analysis approach selection, result presentation,
+                and interpretation aligned with your research questions and methodology.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq__item card">
+            <h3>
+              <button class="faq__q" type="button" aria-expanded="false">
+                What are your typical timelines?
+                <span class="faq__chev" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq__a" hidden>
+              <p>
+                Timelines depend on scope and deadline. Short tasks (editing/formatting) may be completed faster, while thesis modules
+                require staged delivery. We share a realistic schedule before starting.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11) Final CTA -->
+    <section class="section final-cta" aria-label="Final call to action">
+      <div class="container">
+        <div class="final-cta__panel card">
+          <div class="final-cta__content">
+            <h2>Request a confidential academic consultation.</h2>
+            <p class="section__lead">
+              If you are facing a submission deadline, we can help you clarify scope, align formatting and references,
+              and plan a realistic path to completion—step by step.
+            </p>
+            <ul class="final-cta__bullets">
+              <li><span class="dot dot--gold" aria-hidden="true"></span> Confidential handling of documents</li>
+              <li><span class="dot dot--gold" aria-hidden="true"></span> Clear deliverables and revision control</li>
+              <li><span class="dot dot--gold" aria-hidden="true"></span> University template alignment</li>
+            </ul>
           </div>
 
-          <aside class="calc__summary" aria-label="Estimate summary">
-            <div class="summary card">
-              <h3>Estimated Total</h3>
-              <div class="summary__price" id="totalPrice">PKR 0</div>
-              <div class="summary__breakdown" id="breakdown"></div>
-              <div class="summary__fineprint">
-                Prices are estimates. Final quote depends on topic difficulty, referencing, datasets, and scope.
+          <div class="final-cta__actions">
+            <a class="btn btn--primary btn--full" href="#contact">Order Now</a>
+            <a class="btn btn--whatsapp btn--full" href="#contact" data-whatsapp>WhatsApp Consultation</a>
+            <p class="final-cta__note">
+              Prefer email? Use the contact form below for a formal quote request.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog (simple institutional preview) -->
+    <section id="blog" class="section blog" aria-label="Academic blog">
+      <div class="container">
+        <header class="section__header">
+          <h2>Research notes and academic writing guidance</h2>
+          <p class="section__lead">Short, practical articles aligned with university expectations (placeholders).</p>
+        </header>
+
+        <div class="cards-grid">
+          <article class="card blog__item">
+            <h3><a href="#contact">How to structure a literature review as a synthesis</a></h3>
+            <p>Turning sources into themes, identifying gaps, and maintaining academic flow.</p>
+            <a class="text-link" href="#contact">Read more</a>
+          </article>
+          <article class="card blog__item">
+            <h3><a href="#contact">Methodology chapter checklist for MS/MPhil</a></h3>
+            <p>Design choices, sampling, instruments, and validity—written in a defendable academic tone.</p>
+            <a class="text-link" href="#contact">Read more</a>
+          </article>
+          <article class="card blog__item">
+            <h3><a href="#contact">APA vs IEEE: common citation errors and fixes</a></h3>
+            <p>Consistency, in-text patterns, reference list ordering, and formatting controls.</p>
+            <a class="text-link" href="#contact">Read more</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact" aria-label="Contact and order">
+      <div class="container">
+        <header class="section__header">
+          <h2>Contact Thesis Help Pakistan</h2>
+          <p class="section__lead">
+            Share your requirements, template/rubric, and deadline. We will respond with a scope-based estimate and next steps.
+          </p>
+        </header>
+
+        <div class="contact__grid">
+          <article class="card contact__card">
+            <h3>Request a formal quote</h3>
+            <form class="contact__form" action="#" method="post">
+              <div class="field">
+                <label for="name">Full Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required />
               </div>
 
-              <div class="divider"></div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required />
+              </div>
 
-              <h4>What you get</h4>
-              <ul class="ticks">
-                <li>Confidential handling</li>
-                <li>Quality-focused assistance</li>
-                <li>Clear structure & academic tone</li>
-                <li>Optional integrity review support</li>
+              <div class="field">
+                <label for="message">Requirements</label>
+                <textarea id="message" name="message" rows="5" placeholder="Briefly describe your thesis/module, format, and deadline." required></textarea>
+              </div>
+
+              <button class="btn btn--primary btn--full" type="submit">Submit Request</button>
+
+              <p class="contact__fine">
+                By submitting, you confirm the information is accurate and understand that we provide academic consultancy and structured support.
+              </p>
+            </form>
+          </article>
+
+          <aside class="card contact__card">
+            <h3>Direct contact</h3>
+            <div class="contact__list">
+              <div class="contact__row">
+                <span class="contact__label">WhatsApp</span>
+                <span class="contact__value">
+                  <a class="text-link" href="#" data-whatsapp>(+92) 000 0000000</a>
+                </span>
+              </div>
+              <div class="contact__row">
+                <span class="contact__label">Email</span>
+                <span class="contact__value">
+                  <a class="text-link" href="mailto:info@example.com">info@example.com</a>
+                </span>
+              </div>
+              <div class="contact__row">
+                <span class="contact__label">Service Hours</span>
+                <span class="contact__value">Mon–Sat, 10:00–19:00 PKT</span>
+              </div>
+              <div class="contact__row">
+                <span class="contact__label">Coverage</span>
+                <span class="contact__value">All major cities in Pakistan (remote consultation)</span>
+              </div>
+            </div>
+
+            <div class="contact__panel">
+              <p class="contact__panel-title">What to share for fastest review</p>
+              <ul class="checklist">
+                <li>Template or department rubric</li>
+                <li>Current draft (if any)</li>
+                <li>Supervisor comments</li>
+                <li>Required citation style</li>
               </ul>
             </div>
           </aside>
         </div>
       </div>
     </section>
-
-    <!-- Contact -->
-    <section class="section" id="contact" aria-label="Contact us">
-      <div class="container">
-        <div class="section__head">
-          <h2>Contact Us</h2>
-          <p class="muted">Share your requirements and we’ll respond quickly with a tailored quote.</p>
-        </div>
-
-        <div class="contact">
-          <div class="contact__card card">
-            <h3>Send a Message</h3>
-            <form id="contactForm" class="contact__form" novalidate>
-              <div class="grid2">
-                <label>
-                  Name
-                  <input type="text" id="cName" required placeholder="Your name" />
-                </label>
-                <label>
-                  Phone / WhatsApp
-                  <input type="tel" id="cPhone" required placeholder="+92..." />
-                </label>
-              </div>
-
-              <label>
-                Email (optional)
-                <input type="email" id="cEmail" placeholder="you@example.com" />
-              </label>
-
-              <label>
-                Service needed
-                <select id="cService">
-                  <option value="writing">Writing</option>
-                  <option value="rewriting">Rewriting</option>
-                  <option value="assignment">Assignments / Coursework</option>
-                  <option value="research">Research Article</option>
-                  <option value="thesis">Thesis / Dissertation</option>
-                  <option value="analysis">Data Set & Data Analysis</option>
-                  <option value="formatting">Formatting / Proofreading</option>
-                  <option value="plag">AI + Plag Report</option>
-                  <option value="removal">AI + Plag Removal</option>
-                </select>
-              </label>
-
-              <label>
-                Message
-                <textarea id="cMessage" rows="5" required placeholder="Briefly describe your requirements..."></textarea>
-              </label>
-
-              <div class="form-actions">
-                <button class="btn" type="submit">Submit</button>
-                <button class="btn btn--ghost" type="button" id="contactWhatsApp">WhatsApp Instead</button>
-              </div>
-
-              <div class="form-msg" id="formMsg" role="status" aria-live="polite"></div>
-            </form>
-          </div>
-
-          <div class="contact__info">
-            <div class="card contact__infoCard">
-              <h3>Direct Contact</h3>
-              <p class="muted">Update these details in <code>script.js</code>.</p>
-              <div class="info-list">
-                <div class="info-item">
-                  <span class="info-label">WhatsApp</span>
-                  <span class="info-value" id="waDisplay">+92 300 0000000</span>
-                </div>
-                <div class="info-item">
-                  <span class="info-label">Email</span>
-                  <span class="info-value" id="emailDisplay">info@thesishelppakistan.com</span>
-                </div>
-                <div class="info-item">
-                  <span class="info-label">Hours</span>
-                  <span class="info-value">24/7 Support</span>
-                </div>
-              </div>
-
-              <div class="divider"></div>
-
-              <h4>Trust & Safety</h4>
-              <ul class="ticks">
-                <li>Confidential communication</li>
-                <li>Clear scope and deliverables</li>
-                <li>Anti-fraud: No credential sharing required</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
-  <!-- Footer -->
+  <!-- 12) Footer -->
   <footer class="footer" aria-label="Footer">
-    <div class="container footer__inner">
-      <div>
-        <div class="footer__brand">Thesis Help Pakistan</div>
-        <div class="muted small">Academic Help • Research Support • Formatting • Data Analysis • Integrity Checks</div>
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <div class="brand brand--footer">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__name">Thesis Help Pakistan</span>
+        </div>
+        <p class="footer__desc">
+          A research consultancy supporting university students and scholars with structured academic guidance,
+          editing, formatting, and methodology planning—aligned with institutional requirements.
+        </p>
+
+        <div class="footer__payments" aria-label="Payment methods">
+          <p class="footer__small-title">Payment Methods</p>
+          <div class="payments" aria-hidden="true">
+            <span class="pay-chip">Bank Transfer</span>
+            <span class="pay-chip">Easypaisa</span>
+            <span class="pay-chip">JazzCash</span>
+          </div>
+        </div>
       </div>
+
       <div class="footer__links">
-        <a href="#services">Services</a>
-        <a href="#samples">Sample Work</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#contact">Contact</a>
+        <p class="footer__small-title">Services</p>
+        <ul>
+          <li><a href="#services">Thesis Guidance</a></li>
+          <li><a href="#services">Editing & Proofreading</a></li>
+          <li><a href="#services">Formatting & Referencing</a></li>
+          <li><a href="#services">Literature Review Support</a></li>
+          <li><a href="#services">Data Analysis Guidance</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__links">
+        <p class="footer__small-title">Policies</p>
+        <ul>
+          <li><a href="#contact">Privacy Policy</a></li>
+          <li><a href="#contact">Terms of Service</a></li>
+          <li><a href="#contact">Refund Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__contact">
+        <p class="footer__small-title">Contact</p>
+        <ul>
+          <li><span class="muted">WhatsApp:</span> <a href="#" data-whatsapp>(+92) 000 0000000</a></li>
+          <li><span class="muted">Email:</span> <a href="mailto:info@example.com">info@example.com</a></li>
+          <li><span class="muted">Hours:</span> Mon–Sat, 10:00–19:00 PKT</li>
+        </ul>
       </div>
     </div>
+
     <div class="container footer__bottom">
-      <div class="muted small">© <span id="year"></span> Thesis Help Pakistan. All rights reserved.</div>
-      <a class="muted small" href="#home">Back to top ↑</a>
+      <p>© <span data-year></span> Thesis Help Pakistan. All rights reserved.</p>
+      <p class="footer__bottom-note">Academic consultancy and structured support. We encourage compliance with your university’s academic integrity policies.</p>
     </div>
   </footer>
 
-  <!-- WhatsApp Floating Button -->
-  <a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <!-- 13) Floating WhatsApp button (official green) -->
+  <a class="wa-float" href="#contact" aria-label="WhatsApp consultation" data-whatsapp>
     <span class="wa-float__icon" aria-hidden="true">WA</span>
     <span class="wa-float__text">WhatsApp</span>
   </a>
 
-  <!-- Sample Modal -->
-  <div class="modal" id="sampleModal" aria-hidden="true" role="dialog" aria-label="Sample preview">
-    <div class="modal__backdrop" data-close="true"></div>
-    <div class="modal__panel" role="document">
-      <div class="modal__head">
-        <h3 id="modalTitle">Sample</h3>
-        <button class="icon-btn" id="modalClose" aria-label="Close modal">✕</button>
-      </div>
-      <div class="modal__body" id="modalBody"></div>
-      <div class="modal__foot">
-        <button class="btn btn--ghost btn--small" id="modalClose2" type="button">Close</button>
-        <a class="btn btn--small" href="#contact" id="modalCta">Request Similar Work</a>
-      </div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
