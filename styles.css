@@ -1,24 +1,27 @@
-/* =========================
+/* ===============================
    Thesis Help Pakistan
-   Professional Academic Theme
-   ========================= */
+   Clean Academic Professional Theme
+   =============================== */
 
-/* ---------- ROOT VARIABLES ---------- */
+/* ---------- ROOT ---------- */
 :root{
-  --bg: #f8f9fb;
+  --bg: #f9fafb;
   --card: #ffffff;
   --text: #0f172a;
   --muted: #475569;
-  --line: #e5e7eb;
+  --border: #e2e8f0;
 
-  --primary: #1e3a8a;        /* Academic Navy */
-  --primary-soft: #2563eb;   /* Soft Blue */
+  --primary: #1e3a8a;      /* Academic navy */
+  --primary-soft: #2563eb;
+  --accent: #0f172a;
 
   --whatsapp: #25D366;
 
-  --shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
-  --radius: 14px;
-  --radius2: 18px;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+  --shadow: 0 10px 30px rgba(15,23,42,0.08);
+
+  --radius: 10px;
+  --radius-lg: 16px;
 
   --container: 1120px;
   --font: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -38,11 +41,11 @@ body{
   font-family: var(--font);
   background: var(--bg);
   color: var(--text);
-  line-height: 1.65;
+  line-height: 1.75;
 }
 
 .container{
-  width: min(var(--container), calc(100% - 40px));
+  width: min(var(--container), calc(100% - 32px));
   margin: 0 auto;
 }
 
@@ -55,9 +58,28 @@ a:hover{
   text-decoration: underline;
 }
 
-h1, h2, h3, h4{
-  color: var(--primary);
+h1{
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  margin-bottom: 16px;
+}
+
+h2{
+  font-size: 1.75rem;
+  margin-bottom: 12px;
+}
+
+h3{
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+h1, h2, h3{
+  color: var(--accent);
   letter-spacing: -0.01em;
+}
+
+p{
+  margin-bottom: 14px;
 }
 
 .muted{
@@ -67,7 +89,8 @@ h1, h2, h3, h4{
 /* ---------- TOP BAR ---------- */
 .topbar{
   background: #ffffff;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
 }
 
 .topbar__inner{
@@ -80,14 +103,14 @@ h1, h2, h3, h4{
 /* ---------- HEADER ---------- */
 .header{
   background: #ffffff;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--border);
 }
 
 .header__inner{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 0;
+  padding: 18px 0;
 }
 
 .brand{
@@ -97,9 +120,9 @@ h1, h2, h3, h4{
 }
 
 .brand__mark{
-  width: 42px;
-  height: 42px;
-  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
   background: var(--primary);
   color: #ffffff;
   display: grid;
@@ -109,6 +132,7 @@ h1, h2, h3, h4{
 
 .brand__name{
   font-weight: 800;
+  font-size: 1.05rem;
 }
 
 .brand__tag{
@@ -119,7 +143,7 @@ h1, h2, h3, h4{
 /* ---------- NAV ---------- */
 .nav{
   display: flex;
-  gap: 20px;
+  gap: 22px;
 }
 
 .nav a{
@@ -133,14 +157,17 @@ h1, h2, h3, h4{
 
 /* ---------- BUTTONS ---------- */
 .btn{
-  padding: 12px 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
   border-radius: var(--radius);
   border: none;
   background: var(--primary);
   color: #ffffff;
   font-weight: 600;
   cursor: pointer;
-  transition: background .2s ease, transform .1s ease;
+  transition: background .2s ease, transform .15s ease;
 }
 
 .btn:hover{
@@ -161,37 +188,33 @@ h1, h2, h3, h4{
 
 /* ---------- HERO ---------- */
 .hero{
-  padding: 60px 0 40px;
+  padding: 70px 0 50px;
 }
 
 .hero__grid{
   display: grid;
   grid-template-columns: 1.2fr .8fr;
-  gap: 30px;
-}
-
-.hero h1{
-  font-size: clamp(2rem, 3vw, 3rem);
-  margin-bottom: 12px;
+  gap: 40px;
+  align-items: start;
 }
 
 .lead{
+  font-size: 1.05rem;
   color: var(--muted);
-  margin-bottom: 20px;
 }
 
-/* ---------- CARDS ---------- */
+/* ---------- CARD ---------- */
 .card{
   background: var(--card);
-  border-radius: var(--radius2);
-  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
   box-shadow: var(--shadow);
-  padding: 20px;
+  padding: 24px;
 }
 
-/* ---------- SECTIONS ---------- */
+/* ---------- SECTION ---------- */
 .section{
-  padding: 60px 0;
+  padding: 70px 0;
 }
 
 .section--alt{
@@ -199,21 +222,28 @@ h1, h2, h3, h4{
 }
 
 .section__head{
-  margin-bottom: 24px;
+  max-width: 720px;
+  margin-bottom: 30px;
 }
 
 /* ---------- SERVICES ---------- */
 .cards{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 24px;
 }
 
 .service-card{
   background: #ffffff;
-  border: 1px solid var(--line);
-  border-radius: var(--radius2);
-  padding: 20px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  padding: 24px;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.service-card:hover{
+  transform: translateY(-4px);
   box-shadow: var(--shadow);
 }
 
@@ -222,11 +252,17 @@ h1, h2, h3, h4{
 }
 
 /* ---------- FORMS ---------- */
+label{
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
 input, select, textarea{
   width: 100%;
-  padding: 12px;
+  padding: 12px 14px;
+  margin-top: 6px;
   border-radius: var(--radius);
-  border: 1px solid var(--line);
+  border: 1px solid var(--border);
   background: #ffffff;
   font-family: var(--font);
 }
@@ -238,22 +274,17 @@ textarea{
 /* ---------- FOOTER ---------- */
 .footer{
   background: #ffffff;
-  border-top: 1px solid var(--line);
-  padding: 30px 0;
+  border-top: 1px solid var(--border);
+  padding: 40px 0;
 }
 
 .footer__inner{
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 24px;
 }
 
-.footer__links{
-  display: flex;
-  gap: 16px;
-}
-
-/* ---------- WHATSAPP FLOAT ---------- */
+/* ---------- WHATSAPP ---------- */
 .wa-float{
   position: fixed;
   right: 20px;
@@ -261,13 +292,13 @@ textarea{
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 12px 16px;
+  padding: 12px 18px;
   border-radius: 999px;
   background: var(--whatsapp);
   color: #ffffff;
   font-weight: 600;
-  box-shadow: 0 10px 24px rgba(37, 211, 102, 0.35);
-  z-index: 100;
+  box-shadow: 0 12px 28px rgba(37,211,102,.35);
+  z-index: 999;
 }
 
 .wa-float:hover{
