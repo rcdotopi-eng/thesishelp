@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Thesis Help Pakistan — Academic writing, rewriting, assignments, coursework, research articles, dissertations, synopsis, proposals, thesis, data analysis, formatting, proofreading, AI & plagiarism reports and removal." />
+  <meta name="theme-color" content="#0b1220" />
+  <title>Thesis Help Pakistan | Academic Help & Research Support</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Optional: Google font (still HTML/CSS only) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Topbar -->
+  <div class="topbar" role="region" aria-label="Top bar">
+    <div class="container topbar__inner">
+      <div class="topbar__left">
+        <span class="badge">Pakistan • Confidential • On-time</span>
+      </div>
+      <div class="topbar__right">
+        <a class="toplink" href="#pricing">Price Calculator</a>
+        <span class="dot">•</span>
+        <a class="toplink" href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="home">
+    <div class="container header__inner">
+      <a class="brand" href="#home" aria-label="Thesis Help Pakistan home">
+        <div class="brand__mark" aria-hidden="true">TH</div>
+        <div class="brand__text">
+          <div class="brand__name">Thesis Help Pakistan</div>
+          <div class="brand__tag">Academic Help • Research Support</div>
+        </div>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="nav" id="navMenu" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#samples">Sample Work</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact" class="btn btn--small">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero" aria-label="Hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <h1>Premium Academic Help for <span class="grad">Thesis, Research & Coursework</span></h1>
+          <p class="lead">
+            Professional support in writing, rewriting, assignments, dissertations, synopsis, proposals, thesis,
+            data analysis, formatting, proofreading, and AI/plagiarism services — delivered with strict confidentiality.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#pricing">Calculate Price</a>
+            <a class="btn btn--ghost" href="#services">Explore Services</a>
+          </div>
+
+          <div class="trust-row" aria-label="Trust indicators">
+            <div class="trust">
+              <div class="trust__num" id="statOrders">1,200+</div>
+              <div class="trust__label">Projects Assisted</div>
+            </div>
+            <div class="trust">
+              <div class="trust__num" id="statRating">4.8/5</div>
+              <div class="trust__label">Client Satisfaction</div>
+            </div>
+            <div class="trust">
+              <div class="trust__num">24/7</div>
+              <div class="trust__label">Support</div>
+            </div>
+          </div>
+
+          <div class="note">
+            <strong>Important:</strong> We provide academic assistance and editing services. Final submission is always your responsibility.
+          </div>
+        </div>
+
+        <div class="hero__card" role="region" aria-label="Quick quote">
+          <div class="card">
+            <div class="card__top">
+              <h2>Quick Quote</h2>
+              <p class="muted">Get an instant estimate and send it to WhatsApp.</p>
+            </div>
+
+            <form class="mini-form" id="miniQuoteForm">
+              <label>
+                Service
+                <select id="miniService">
+                  <option value="writing">Writing</option>
+                  <option value="rewriting">Rewriting</option>
+                  <option value="assignment">Assignments / Coursework</option>
+                  <option value="research">Research Article</option>
+                  <option value="thesis">Thesis / Dissertation</option>
+                  <option value="analysis">Data Set & Data Analysis</option>
+                  <option value="formatting">Formatting / Proofreading</option>
+                  <option value="plag">AI + Plag Report</option>
+                  <option value="removal">AI + Plag Removal</option>
+                </select>
+              </label>
+
+              <div class="grid2">
+                <label>
+                  Pages
+                  <input id="miniPages" type="number" min="1" value="10" />
+                </label>
+                <label>
+                  Deadline
+                  <select id="miniDeadline">
+                    <option value="standard">Standard</option>
+                    <option value="urgent">Urgent</option>
+                    <option value="express">Express</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="mini-total">
+                <div>
+                  <div class="muted tiny">Estimated Total</div>
+                  <div class="price" id="miniTotal">PKR 0</div>
+                </div>
+                <button class="btn btn--small" type="button" id="miniWhatsApp">WhatsApp Quote</button>
+              </div>
+
+              <div class="tiny muted">Transparent estimation. Final quote may vary by topic complexity and requirements.</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Logos / Proof -->
+    <section class="proof" aria-label="Proof strip">
+      <div class="container proof__inner">
+        <div class="proof__item">
+          <span class="proof__icon" aria-hidden="true">✔</span>
+          Confidential Handling
+        </div>
+        <div class="proof__item">
+          <span class="proof__icon" aria-hidden="true">✔</span>
+          Turnitin-Style Reports (upon request)
+        </div>
+        <div class="proof__item">
+          <span class="proof__icon" aria-hidden="true">✔</span>
+          Expert Formatting (APA/MLA/Chicago)
+        </div>
+        <div class="proof__item">
+          <span class="proof__icon" aria-hidden="true">✔</span>
+          Charts, Figures & Diagrams
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services" aria-label="Services">
+      <div class="container">
+        <div class="section__head">
+          <h2>All Services</h2>
+          <p class="muted">End-to-end academic support across writing, research, analysis, visuals, formatting, and integrity checks.</p>
+        </div>
+
+        <div class="cards">
+          <article class="service-card">
+            <h3>Writing & Rewriting</h3>
+            <p>Academic writing, rewriting, paraphrasing, and improving clarity while preserving meaning and structure.</p>
+            <ul class="ticks">
+              <li>Thesis / Dissertation writing support</li>
+              <li>Rewriting & language enhancement</li>
+              <li>Abstracts, introductions, literature review</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <h3>Assignments & Coursework</h3>
+            <p>Well-structured coursework support aligned with rubrics, learning outcomes, and submission guidelines.</p>
+            <ul class="ticks">
+              <li>Essays & case studies</li>
+              <li>Quizzes, reports, presentations (content)</li>
+              <li>Referencing & citations</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <h3>Research Articles</h3>
+            <p>Support for paper structure, methodology, results writing, and improving publish-readiness.</p>
+            <ul class="ticks">
+              <li>Journal formatting alignment</li>
+              <li>Proofreading & technical editing</li>
+              <li>Figures/tables and captions</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <h3>Synopsis, Proposals & Plans</h3>
+            <p>Strong research direction, problem statement, objectives, and methodology designed for approval.</p>
+            <ul class="ticks">
+              <li>Synopsis and proposal drafting</li>
+              <li>Research questions & framework</li>
+              <li>Gantt / timelines (optional)</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <h3>Data Set & Data Analysis</h3>
+            <p>Help with data preparation and analysis workflows (SPSS/Excel/R/Python guidance possible).</p>
+            <ul class="ticks">
+              <li>Cleaning, coding & descriptive stats</li>
+              <li>Regression/ANOVA/Correlation (as relevant)</li>
+              <li>Interpretation & reporting support</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <h3>Charts, Figures & Diagrams</h3>
+            <p>Professional visuals and academic-ready diagrams that improve readability and impact.</p>
+            <ul class="ticks">
+              <li>Charts & tables redesign</li>
+              <li>Conceptual / theoretical frameworks</li>
+              <li>Flowcharts, models, infographics</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <h3>Formatting & Proofreading</h3>
+            <p>Polished formatting and quality checks aligned to university guidelines and style requirements.</p>
+            <ul class="ticks">
+              <li>APA / MLA / Chicago</li>
+              <li>References & citations check</li>
+              <li>Consistency: headings, numbering, TOC</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <h3>AI + Plag Reports</h3>
+            <p>Integrity checking support with summary insights and recommended improvements.</p>
+            <ul class="ticks">
+              <li>Similarity review guidance</li>
+              <li>AI-detection review guidance</li>
+              <li>Revision plan to reduce risk</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <h3>AI + Plag Removal</h3>
+            <p>Careful rewriting and enhancement to improve originality while keeping academic meaning intact.</p>
+            <ul class="ticks">
+              <li>Human-style rewriting</li>
+              <li>Improved academic tone</li>
+              <li>References preserved (where applicable)</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Samples -->
+    <section class="section section--alt" id="samples" aria-label="Sample work">
+      <div class="container">
+        <div class="section__head">
+          <h2>Sample Work</h2>
+          <p class="muted">A few example deliverables. Replace these with your real samples (sanitized and anonymized).</p>
+        </div>
+
+        <div class="samples">
+          <button class="sample" data-sample="sample1">
+            <div class="sample__top">
+              <span class="pill">Thesis Chapter</span>
+              <span class="pill pill--ghost">APA</span>
+            </div>
+            <h3>Literature Review (Excerpt)</h3>
+            <p class="muted">Structured synthesis with themes, citations, and academic tone.</p>
+            <span class="linkish">Preview →</span>
+          </button>
+
+          <button class="sample" data-sample="sample2">
+            <div class="sample__top">
+              <span class="pill">Data Analysis</span>
+              <span class="pill pill--ghost">SPSS/Excel</span>
+            </div>
+            <h3>Results + Interpretation</h3>
+            <p class="muted">Descriptives, reliability, correlation, and interpretation write-up.</p>
+            <span class="linkish">Preview →</span>
+          </button>
+
+          <button class="sample" data-sample="sample3">
+            <div class="sample__top">
+              <span class="pill">Research Article</span>
+              <span class="pill pill--ghost">Journal</span>
+            </div>
+            <h3>Methodology Section</h3>
+            <p class="muted">Clear methods, sampling, instruments, and ethical considerations.</p>
+            <span class="linkish">Preview →</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section" id="reviews" aria-label="Reviews">
+      <div class="container">
+        <div class="section__head">
+          <h2>Client Reviews</h2>
+          <p class="muted">Social proof builds trust. Add screenshots (with permission) or verified review sources.</p>
+        </div>
+
+        <div class="reviews">
+          <div class="review-card" id="reviewCard" aria-live="polite">
+            <!-- JS will inject -->
+          </div>
+
+          <div class="review-controls">
+            <button class="btn btn--ghost btn--small" id="reviewPrev" type="button">← Previous</button>
+            <button class="btn btn--ghost btn--small" id="reviewNext" type="button">Next →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Calculator -->
+    <section class="section section--alt" id="pricing" aria-label="Pricing calculator">
+      <div class="container">
+        <div class="section__head">
+          <h2>Price Calculator</h2>
+          <p class="muted">Instant estimate in PKR. Adjust service, academic level, urgency, and add-ons.</p>
+        </div>
+
+        <div class="calc">
+          <div class="calc__panel">
+            <form id="calcForm" class="calc__form" autocomplete="off">
+              <div class="field">
+                <label for="service">Service</label>
+                <select id="service" name="service">
+                  <option value="writing">Writing</option>
+                  <option value="rewriting">Rewriting</option>
+                  <option value="assignment">Assignments / Coursework</option>
+                  <option value="research">Research Article</option>
+                  <option value="thesis">Thesis / Dissertation</option>
+                  <option value="analysis">Data Set & Data Analysis</option>
+                  <option value="formatting">Formatting / Proofreading</option>
+                  <option value="plag">AI + Plag Report</option>
+                  <option value="removal">AI + Plag Removal</option>
+                </select>
+              </div>
+
+              <div class="field grid2">
+                <div>
+                  <label for="level">Academic Level</label>
+                  <select id="level" name="level">
+                    <option value="ug">Undergraduate</option>
+                    <option value="ms">Masters</option>
+                    <option value="phd">PhD</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="deadline">Deadline</label>
+                  <select id="deadline" name="deadline">
+                    <option value="standard">Standard</option>
+                    <option value="urgent">Urgent</option>
+                    <option value="express">Express</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field grid2">
+                <div>
+                  <label for="pages">Pages</label>
+                  <input id="pages" name="pages" type="number" min="1" value="10" />
+                  <div class="hint">1 page ≈ 250–300 words (typical academic formatting)</div>
+                </div>
+                <div>
+                  <label for="complexity">Complexity</label>
+                  <select id="complexity" name="complexity">
+                    <option value="normal">Normal</option>
+                    <option value="technical">Technical</option>
+                    <option value="highlyTechnical">Highly Technical</option>
+                  </select>
+                </div>
+              </div>
+
+              <fieldset class="field">
+                <legend>Add-ons</legend>
+                <div class="checks">
+                  <label class="check"><input type="checkbox" id="addonFormatting" /> Formatting (APA/MLA/Chicago)</label>
+                  <label class="check"><input type="checkbox" id="addonProof" /> Proofreading</label>
+                  <label class="check"><input type="checkbox" id="addonCharts" /> Charts / Figures / Diagrams</label>
+                  <label class="check"><input type="checkbox" id="addonReport" /> AI + Plag Report</label>
+                </div>
+              </fieldset>
+
+              <div class="field">
+                <label for="notes">Notes (optional)</label>
+                <textarea id="notes" rows="4" placeholder="Topic, university guidelines, required style, any specific instructions..."></textarea>
+              </div>
+
+              <div class="calc__actions">
+                <button class="btn" type="button" id="calcWhatsApp">Send to WhatsApp</button>
+                <button class="btn btn--ghost" type="reset">Reset</button>
+              </div>
+            </form>
+          </div>
+
+          <aside class="calc__summary" aria-label="Estimate summary">
+            <div class="summary card">
+              <h3>Estimated Total</h3>
+              <div class="summary__price" id="totalPrice">PKR 0</div>
+              <div class="summary__breakdown" id="breakdown"></div>
+              <div class="summary__fineprint">
+                Prices are estimates. Final quote depends on topic difficulty, referencing, datasets, and scope.
+              </div>
+
+              <div class="divider"></div>
+
+              <h4>What you get</h4>
+              <ul class="ticks">
+                <li>Confidential handling</li>
+                <li>Quality-focused assistance</li>
+                <li>Clear structure & academic tone</li>
+                <li>Optional integrity review support</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact" aria-label="Contact us">
+      <div class="container">
+        <div class="section__head">
+          <h2>Contact Us</h2>
+          <p class="muted">Share your requirements and we’ll respond quickly with a tailored quote.</p>
+        </div>
+
+        <div class="contact">
+          <div class="contact__card card">
+            <h3>Send a Message</h3>
+            <form id="contactForm" class="contact__form" novalidate>
+              <div class="grid2">
+                <label>
+                  Name
+                  <input type="text" id="cName" required placeholder="Your name" />
+                </label>
+                <label>
+                  Phone / WhatsApp
+                  <input type="tel" id="cPhone" required placeholder="+92..." />
+                </label>
+              </div>
+
+              <label>
+                Email (optional)
+                <input type="email" id="cEmail" placeholder="you@example.com" />
+              </label>
+
+              <label>
+                Service needed
+                <select id="cService">
+                  <option value="writing">Writing</option>
+                  <option value="rewriting">Rewriting</option>
+                  <option value="assignment">Assignments / Coursework</option>
+                  <option value="research">Research Article</option>
+                  <option value="thesis">Thesis / Dissertation</option>
+                  <option value="analysis">Data Set & Data Analysis</option>
+                  <option value="formatting">Formatting / Proofreading</option>
+                  <option value="plag">AI + Plag Report</option>
+                  <option value="removal">AI + Plag Removal</option>
+                </select>
+              </label>
+
+              <label>
+                Message
+                <textarea id="cMessage" rows="5" required placeholder="Briefly describe your requirements..."></textarea>
+              </label>
+
+              <div class="form-actions">
+                <button class="btn" type="submit">Submit</button>
+                <button class="btn btn--ghost" type="button" id="contactWhatsApp">WhatsApp Instead</button>
+              </div>
+
+              <div class="form-msg" id="formMsg" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+          <div class="contact__info">
+            <div class="card contact__infoCard">
+              <h3>Direct Contact</h3>
+              <p class="muted">Update these details in <code>script.js</code>.</p>
+              <div class="info-list">
+                <div class="info-item">
+                  <span class="info-label">WhatsApp</span>
+                  <span class="info-value" id="waDisplay">+92 300 0000000</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Email</span>
+                  <span class="info-value" id="emailDisplay">info@thesishelppakistan.com</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Hours</span>
+                  <span class="info-value">24/7 Support</span>
+                </div>
+              </div>
+
+              <div class="divider"></div>
+
+              <h4>Trust & Safety</h4>
+              <ul class="ticks">
+                <li>Confidential communication</li>
+                <li>Clear scope and deliverables</li>
+                <li>Anti-fraud: No credential sharing required</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" aria-label="Footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="footer__brand">Thesis Help Pakistan</div>
+        <div class="muted small">Academic Help • Research Support • Formatting • Data Analysis • Integrity Checks</div>
+      </div>
+      <div class="footer__links">
+        <a href="#services">Services</a>
+        <a href="#samples">Sample Work</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <div class="muted small">© <span id="year"></span> Thesis Help Pakistan. All rights reserved.</div>
+      <a class="muted small" href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <span class="wa-float__icon" aria-hidden="true">WA</span>
+    <span class="wa-float__text">WhatsApp</span>
+  </a>
+
+  <!-- Sample Modal -->
+  <div class="modal" id="sampleModal" aria-hidden="true" role="dialog" aria-label="Sample preview">
+    <div class="modal__backdrop" data-close="true"></div>
+    <div class="modal__panel" role="document">
+      <div class="modal__head">
+        <h3 id="modalTitle">Sample</h3>
+        <button class="icon-btn" id="modalClose" aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal__body" id="modalBody"></div>
+      <div class="modal__foot">
+        <button class="btn btn--ghost btn--small" id="modalClose2" type="button">Close</button>
+        <a class="btn btn--small" href="#contact" id="modalCta">Request Similar Work</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
